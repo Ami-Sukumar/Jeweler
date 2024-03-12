@@ -3,6 +3,8 @@ body {
     background-size: cover;
     background-position: center;
     color: aliceblue;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .navigation {
