@@ -5,12 +5,12 @@ Description: We're building an "all-in-one" app manger for Linux. This will incl
 dependencies : express
 main : server.js
 
+## instruction for running the code: 
 Clone the repository to your local machine and run 
-node server.js on the terminal
-
+```
+node server.js ## on the terminal from the root of the directory
+```
 Copy code:
 
 git clone : https://github.com/Ami-Sukumar/jeweler.git
 
-
-jxhfiuhrodhgiushfjsigthshk
