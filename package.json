@@ -1,0 +1,12 @@
+{
+  "name": "Jeweler",
+  "version": "1.0",
+  "description": "app manger for Linux",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

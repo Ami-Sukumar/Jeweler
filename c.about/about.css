@@ -1,0 +1,65 @@
+body {
+    background-image: url("https://wallpapercave.com/wp/wp8758452.jpg");
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: white;
+}
+
+.navigation p {
+    margin-right: 10px; 
+    color: white;
+}
+
+.navigation p:last-child {
+    margin-right: 0; 
+}
+
+.navigation p:hover {
+    color: rgb(253, 253, 253);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        padding: 6em;
+    }
+    .container {
+        max-width: 90%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    body {
+        padding: 4em;
+    }
+    .container {
+        max-width: 90%; 
+    }
+}
+
+header {
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+}
+
+/* CSS for h2 */
+h2 {
+    margin: 20px; /* Add margin to provide space */
+}
+
+footer{
+    margin-top: 20px; 
+}
+

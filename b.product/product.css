@@ -1,0 +1,104 @@
+body {
+    background-image: url("https://wallpapercave.com/wp/wp8758452.jpg");
+    background-size: cover;
+    background-position: center; 
+    padding: 5%; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: azure;
+}
+
+.logo {
+    position:absolute;
+    top: 10px;
+    left: 10px; 
+    z-index: 1;
+}
+
+.scrollable-container {
+    max-height: 400px; /* Adjust this value according to your needs */
+    overflow-y: auto;
+}
+
+
+.container {
+    border: 2px solid #fcfcfc8e; 
+    padding: 20px; 
+    margin: 10px auto; 
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-sizing: border-box
+}
+
+.second-container {
+    border: 2px solid #fcfcfc8e; 
+    padding: 20px; 
+    margin-top: 20px;
+    background-color: rgb(119, 119, 119); 
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    
+}
+
+.third-container {
+    border: 2px solid #fcfcfc8e; 
+    padding: 20px; 
+    margin-top: 20px; 
+    background-color: rgb(119, 119, 119); 
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.fourth-container {
+    border: 2px solid #fcfcfc8e; 
+    padding: 20px; 
+    margin-top: 20px; 
+    background-color: rgb(119, 119, 119); 
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+.fifth-container {
+    border: 2px solid #fcfcfc8e; 
+    padding: 20px; 
+    margin-top: 20px; 
+    background-color: rgb(119, 119, 119); 
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    /* Adjust padding for body and containers */
+    body {
+        padding: 3%; /* Reduce padding for smaller screens */
+    }
+    .container {
+        max-width: 90%; /* Adjust container width */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust padding for body and containers */
+    body {
+        padding: 2%; /* Further reduce padding for even smaller screens */
+    }
+    .container {
+        max-width: 90%; /* Adjust container width */
+    }
+}
+
+
+footer{
+    margin-top: 20px; 
+}

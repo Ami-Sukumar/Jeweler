@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* the animation */
+        @keyframes moveContainers {
+            100% {
+                transform: translateY(5%);
+            }
+        }
+       
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <p><a href="/index">Home</a></p>
+            <p><a href="/about">About Us</a></p>
+            <p><a href="/contact">Contact Us</a></p>
+        </div>
+        <img src="jeweler.svg" alt="jeweler logo" width="100px" class="logo">
+        <form class="search-form" onsubmit="return searchRedirect()">
+            <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </header>
+    <h3>Currently available on our platforms</h3>
+    
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://static-00.iconduck.com/assets.00/slack-icon-512x511-58qp4fp3.png" alt="Slack" width="50px" class="grid-logo">
+            <div class="name-tag">Slack</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://www.svgrepo.com/show/331368/discord-v2.svg" alt="Discord" width="50px" class="grid-logo">
+            <div class="name-tag">Discord</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://static-00.iconduck.com/assets.00/steam-icon-2048x2048-rbyixh0f.png" alt="Steam" width="50px" class="grid-logo">
+            <div class="name-tag">Steam</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
