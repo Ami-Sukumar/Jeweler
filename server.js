@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const jsonData = require('./data.json');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -44,3 +45,9 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
+
+console.log(jsonData.title)
+app.get('/data', (req,res) => {
+
+    res.send(`The product name is ${jsonData.title}`);
+});
