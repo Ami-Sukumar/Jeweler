@@ -1,54 +1,46 @@
 const express = require('express');
 const path = require('path');
-const jsonData = require('./data.json');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('a.home'))
-app.use(express.static('b.product'))
-app.use(express.static('c.about'))
-app.use(express.static('d.contact'))
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
+// app.use(express.static(path.join(__dirname, 'public')));
 
-// Route 1: Home page
+// Route: Home page
 app.get('/index', (req, res) => {
-    res.sendFile(path.join(__dirname, 'a.home', 'Index.html'));
+    res.sendFile(path.join(__dirname,'index.html'));
 });
 
-// Route 2: contact page
+
+// Route: Contact page
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'd.contact', 'contact.html'));
+    res.sendFile(path.join(__dirname,'contact.html'));
 });
 
-// Route 2: contact page
+// Route: About page
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'c.about', 'about.html'));
+    res.sendFile(path.join(__dirname,'about.html'));
 });
 
-// Route 3: Dynamic route for product pages
+// Route: Dynamic route for product pages
 app.get('/product', (req, res) => {
     const productName = req.query.prod.toLowerCase();
     if (productName === 'slack' || productName === 'discord' || productName === 'steam') {
-        res.sendFile(path.join(__dirname, 'b.product', `${productName}.html`));
+        res.sendFile(path.join(__dirname, 'public', 'product', `${productName}.html`));
     } else {
-        res.sendFile(path.join(__dirname, 'b.product', 'workinprogress.html'));
+        res.sendFile(path.join(__dirname, 'public', 'product', 'workinprogress.html'));
     }
 });
 
 // Route for the root URL
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'a.home', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-});
-
-
-console.log(jsonData.title)
-app.get('/data', (req,res) => {
-
-    res.send(`The product name is ${jsonData.title}`);
 });
 
