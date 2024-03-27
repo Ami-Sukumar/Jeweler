@@ -17,18 +17,27 @@ body {
 }
 
 .scrollable-container {
-    max-height: 400px; /* Adjust this value according to your needs */
+    max-height: 600px; /* Adjust this value according to your needs */
+    max-width: 800px; /* Adjust width as needed */
     overflow-y: auto;
     border-radius: 10px;
     scrollbar-width: none; /* Hide the scrollbar for Firefox */
+    position: absolute;
+    top: 150px; /* Adjust the top position to place it near the logo */
+    left: 100px; /* Adjust the left position to place it horizontally */
+    border: 3px solid #fcfcfc8e;
+    padding: 20px;
+    height: 600px; /* Adjust height as needed */
+    width: 800px;
+
 }
 
-
 .container {
-    border: 2px solid #fcfcfc8e; 
+    border: 3px solid #fcfcfc8e; 
     padding: 20px; 
-    margin: 10px auto; 
-    max-width: 100%;
+    margin-left: auto;
+    max-width: 400px; /* Adjust width as needed */
+    height: 520px; /* Adjust height as needed */
     margin-bottom: 10px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -38,21 +47,25 @@ body {
     border: 2px solid #fcfcfc8e; 
     padding: 20px; 
     margin-top: 20px;
+    max-width: 900px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
     background-color: rgb(119, 119, 119); 
     border-radius: 10px;
-    max-width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
     box-sizing: border-box;
-
     
 }
+
 
 .third-container {
     border: 2px solid #fcfcfc8e; 
     padding: 20px; 
-    margin-top: 20px; 
+    margin-top: 20px;
+    max-width: 900px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
     background-color: rgb(119, 119, 119); 
     border-radius: 10px;
-    max-width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
     box-sizing: border-box;
 
 }
@@ -60,20 +73,24 @@ body {
 .fourth-container {
     border: 2px solid #fcfcfc8e; 
     padding: 20px; 
-    margin-top: 20px; 
+    margin-top: 20px;
+    max-width: 900px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
     background-color: rgb(119, 119, 119); 
     border-radius: 10px;
-    max-width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
     box-sizing: border-box;
 
 }
 .fifth-container {
     border: 2px solid #fcfcfc8e; 
     padding: 20px; 
-    margin-top: 20px; 
+    margin-top: 20px;
+    max-width: 900px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
     background-color: rgb(119, 119, 119); 
     border-radius: 10px;
-    max-width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
     box-sizing: border-box;
 
 }
@@ -103,5 +120,7 @@ body {
 
 
 footer{
-    margin-top: 20px; 
+    margin-top: 80px; 
 }
+
+
