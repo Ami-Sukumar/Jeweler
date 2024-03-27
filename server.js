@@ -51,3 +51,4 @@ app.get('/data', (req,res) => {
 
     res.send(`The product name is ${jsonData.title}`);
 });
+

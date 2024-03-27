@@ -19,6 +19,8 @@ body {
 .scrollable-container {
     max-height: 400px; /* Adjust this value according to your needs */
     overflow-y: auto;
+    border-radius: 10px;
+    scrollbar-width: none; /* Hide the scrollbar for Firefox */
 }
 
 
