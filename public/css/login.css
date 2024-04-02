@@ -1,0 +1,103 @@
+body {
+    background-image: url("https://wallpapercave.com/wp/wp8758452.jpg");
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    border: 2px solid white; /* Add border around the form */
+    padding: 80px;
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+h2 {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    border-radius: 5%;
+}
+
+form {
+    text-align: center; /* Center the form elements */
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    color: white;
+}
+
+form input {
+    padding: 5px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: white;
+}
+
+.navigation p {
+    margin-right: 10px; 
+    color: white;
+}
+
+.navigation p:last-child {
+    margin-right: 0; 
+}
+
+.navigation p:hover {
+    color: rgb(253, 253, 253);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 6em;
+    }
+    .container {
+        max-width: 90%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 4em;
+    }
+    .container {
+        max-width: 90%; 
+    }
+}
+
+footer {
+    margin-top: 20px; 
+}
