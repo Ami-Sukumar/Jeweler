@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Welcome to Your Profile</h1>
+        <div class="profile-details">
+            <h2>User Information</h2>
+            <p><strong>Username:</strong> <span id="username"><%= username %></span></p>
+            <p><strong>Email:</strong> <span id="email"><%= email %></span></p>
+            <!-- Add more user details here as needed -->
+        </div>
+        <form action="/profile/edit" method="POST">
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new_password" required>
+            <button type="submit">Update Password</button>
+        <!-- Hidden input for username -->
+    <input type="hidden" id="username" name="username" value="<%= username %>">
+    <!-- Hidden input for old password -->
+    <input type="hidden" id="old-password" name="old_password" value="<%= old_password %>">
+        </form>
+        <form action="/profile/delete" method="POST">
+    <!-- Hidden input for username -->
+    <input type="hidden" id="username" name="username" value="<%= username %>">
+            <button type="submit">Delete Profile</button>
+        </form>
+        <a href="/logout" class="logout-btn">Logout</a>
+    </div>
+</body>
+</html>
